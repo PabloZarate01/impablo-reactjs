@@ -1,0 +1,2 @@
+(this["webpackJsonpimpablo-reactjs"]=this["webpackJsonpimpablo-reactjs"]||[]).push([[0],{10:function(e,t,c){"use strict";c.r(t);var n=c(1),r=c.n(n),s=c(3),i=c.n(s),a=(c(8),c(0));var o=function(){return Object(a.jsx)("div",{className:"App",children:Object(a.jsx)("h1",{children:"it works!"})})};i.a.render(Object(a.jsx)(r.a.StrictMode,{children:Object(a.jsx)(o,{})}),document.getElementById("root"))},8:function(e,t,c){}},[[10,1,2]]]);
+//# sourceMappingURL=main.c749c0d7.chunk.js.map

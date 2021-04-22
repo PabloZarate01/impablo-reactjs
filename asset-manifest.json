@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/impablo-reactjs/static/css/main.cf27da72.chunk.css",
+    "main.js": "/impablo-reactjs/static/js/main.c749c0d7.chunk.js",
+    "main.js.map": "/impablo-reactjs/static/js/main.c749c0d7.chunk.js.map",
+    "runtime-main.js": "/impablo-reactjs/static/js/runtime-main.3686960b.js",
+    "runtime-main.js.map": "/impablo-reactjs/static/js/runtime-main.3686960b.js.map",
+    "static/js/2.ea5e34aa.chunk.js": "/impablo-reactjs/static/js/2.ea5e34aa.chunk.js",
+    "static/js/2.ea5e34aa.chunk.js.map": "/impablo-reactjs/static/js/2.ea5e34aa.chunk.js.map",
+    "index.html": "/impablo-reactjs/index.html",
+    "static/css/main.cf27da72.chunk.css.map": "/impablo-reactjs/static/css/main.cf27da72.chunk.css.map",
+    "static/js/2.ea5e34aa.chunk.js.LICENSE.txt": "/impablo-reactjs/static/js/2.ea5e34aa.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3686960b.js",
+    "static/js/2.ea5e34aa.chunk.js",
+    "static/css/main.cf27da72.chunk.css",
+    "static/js/main.c749c0d7.chunk.js"
+  ]
+}

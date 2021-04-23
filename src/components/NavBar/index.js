@@ -1,19 +1,45 @@
-import React from "react";
-
-const NavBar = () => {
+import React, { useState } from "react";
+import {
+  MobileIcon,
+  Nav,
+  NavBarContainer,
+  NavBtn,
+  NavBtnLink,
+  NavItem,
+  NavLinks,
+  NavLogo,
+  NavMenu,
+} from "./NavBarElements";
+import { FaBars } from "react-icons/fa";
+import SideBar from "../SideBar";
+const NavBar = ({...props}) => {
+  const [sidebarActive, setSidebarOpen] = useState(false) 
+  const toggleSidebar = () => setSidebarOpen(!sidebarActive)
   return (
     <>
       <Nav>
-        <NavLink to="/">
-            <h1>imPablo</h1>
-        </NavLink>
-        <Bars />
-        <NavMenu>
-            <NavLink to="about" activeStyle>
-                About
-            </NavLink>
-        </NavMenu>
+        <NavBarContainer>
+          <NavLogo>impablo</NavLogo>
+          <MobileIcon>
+            <FaBars onClick={toggleSidebar} color="white"></FaBars>
+          </MobileIcon>
+          <NavMenu>
+            <NavItem>
+              <NavLinks to="about">About</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="services">Services</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="portfolio">Portfolio</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="contact">Contact</NavLinks>
+            </NavItem>
+          </NavMenu>
+        </NavBarContainer>
       </Nav>
+      <SideBar toggle={toggleSidebar} isOpen={sidebarActive}></SideBar>
     </>
   );
 };

@@ -21,7 +21,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "deploy":"react-script build && scp -r ./build/* /var/www/impablo.com/html",
+    "deploy":"react-scripts build && scp -r ./build/* /var/www/impablo.com/html",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

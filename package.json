@@ -1,6 +1,6 @@
 {
-  "homepage": "https://pablozarate01.github.io/impablo-reactjs",
-  "name": "impablo-reactjs",
+  "homepage": "https://impablo.com",
+  "name": "impablo.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,8 +21,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy":"react-script build && scp -r ./build/* /var/www/impablo.com/html",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

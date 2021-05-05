@@ -5,7 +5,7 @@ import NavBar from "../../components/NavBar";
 const LandingPage = () => {
   return (
     <div>
-      <NavBar></NavBar>
+      {/* <NavBar></NavBar> */}
       <HeroSection></HeroSection>
     </div>
   );

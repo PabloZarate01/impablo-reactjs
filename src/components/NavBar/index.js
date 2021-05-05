@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   MobileIcon,
   Nav,
@@ -12,12 +12,26 @@ import {
 } from "./NavBarElements";
 import { FaBars } from "react-icons/fa";
 import SideBar from "../SideBar";
-const NavBar = ({...props}) => {
-  const [sidebarActive, setSidebarOpen] = useState(false) 
-  const toggleSidebar = () => setSidebarOpen(!sidebarActive)
+const NavBar = ({ ...props }) => {
+  const [sidebarActive, setSidebarOpen] = useState(false);
+  const toggleSidebar = () => setSidebarOpen(!sidebarActive);
+  const [scrollNav, setScrollNav] = useState(false);
+
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, []);
+
   return (
     <>
-      <Nav>
+      <Nav scrollNav={scrollNav}>
         <NavBarContainer>
           <NavLogo>impablo</NavLogo>
           <MobileIcon>

@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-router-dom";
-import { PalleteColors } from '../../theme'
+import { PalleteColors } from "../../theme";
 export const Nav = styled.nav`
-  background-color: #000;
+  background-color: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
   height: 80px;
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,13 +76,12 @@ export const NavLinks = styled(LinkS)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-
   &:active {
     border-bottom: 3px solid ${PalleteColors.primary};
   }
   &:hover {
-      transition: all 0.2s ease-in-out;
-      border-bottom: 3px solid ${PalleteColors.primary};
+    transition: all 0.2s ease-in-out;
+    border-bottom: 3px solid ${PalleteColors.primary};
   }
 `;
 
@@ -101,7 +101,7 @@ export const NavBtnLink = styled(LinkR)`
   padding: 10px 22px;
   color: #010606;
   font-size: 16px;
-  font-weight:bold;
+  font-weight: bold;
   outline: none;
   border: none;
   cursor: pointer;
@@ -109,8 +109,8 @@ export const NavBtnLink = styled(LinkR)`
   text-decoration: none;
 
   &:hover {
-      transition: all 0.2s ease-in-out;
-      background:#FFF;
-      color:#010606
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
   }
 `;

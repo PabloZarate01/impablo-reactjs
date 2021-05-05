@@ -26,12 +26,12 @@ const HeroSection = () => {
       <HeroContent>
         <HeroH1>Pablo Zarate</HeroH1>
         <HeroP>Fullstack Developer</HeroP>
-        <HeroBtnWrapper>
+        {/* <HeroBtnWrapper>
           <Button onMouseEnter={onHover} to="singup">
             Get Started
             {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
-        </HeroBtnWrapper>
+        </HeroBtnWrapper> */}
       </HeroContent>
     </HeroContainer>
   );
